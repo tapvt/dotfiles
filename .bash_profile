@@ -11,8 +11,7 @@ function sha(){
 PS1="$GREEN\u@\h$YELLOW\$(ref)\$(sha)\[\e[0m\][\w]\$ "
 
 export PATH=/user/local/share/pear/:/opt/local/bin:/opt/local/sbin:$PATH
-export HISTCONTROL=erasedups
-export HISTSIZE=30000
+export HISTSIZE=300000
 export KPATH=/Users/bweller/repos/kohort
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 ulimit -u 256
