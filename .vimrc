@@ -4,8 +4,8 @@ colors molokai
 au TabLeave * set nocursorline nocursorcolumn
 au TabEnter * set cursorline cursorcolumn
 set modeline
-:hi CursorLine   ctermbg=darkgrey
-:hi CursorColumn ctermbg=darkgrey
+:hi CursorLine   ctermbg=darkgrey ctermfg=white
+:hi CursorColumn ctermbg=darkgrey ctermfg=white
 set number
 set backspace=2
 set ls=2
@@ -54,6 +54,16 @@ function! PHPClean()
     :%s/true/TRUE/g
     :%s/null/NULL/g
 endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Improved diff display 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+highlight DiffAdd term=reverse cterm=bold ctermbg=DarkGreen ctermfg=White
+highlight DiffChange term=reverse cterm=bold ctermbg=DarkCyan ctermfg=White
+highlight DiffText term=reverse cterm=bold ctermbg=DarkGray ctermfg=White
+highlight DiffDelete term=reverse cterm=bold ctermbg=DarkRed ctermfg=White
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Function to select a range, and command
