@@ -8,8 +8,6 @@ snippet inc
 	include '${1:file}';${2}
 snippet inc1
 	include_once '${1:file}';${2}
-snippet req
-	require '${1:file}';${2}
 snippet req1
 	require_once '${1:file}';${2}
 # $GLOBALS['...']
@@ -31,6 +29,10 @@ snippet $_ SERVER['...']
 	$_SERVER['${1:variable}']${2}
 snippet $_ SESSION['...']
 	$_SESSION['${1:variable}']${2}
+snippet dsj
+	$this->request->send_json(
+		${1}
+		);die();
 # Start Docblock
 snippet /*
 	/**

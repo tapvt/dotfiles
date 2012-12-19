@@ -1,3 +1,4 @@
 supertab.vba: call delete('/Users/bweller/.vim/doc/supertab.txt')|call delete('/Users/bweller/.vim/plugin/supertab.vim')
 checksyntax.vba: call delete('/Users/bweller/.vim/doc/checksyntax.txt')|call delete('/Users/bweller/.vim/plugin/checksyntax.vim')|call delete('/Users/bweller/.vim/autoload/checksyntax.vim')
 Align.vba: call delete('/Users/bweller/.vim/plugin/AlignPlugin.vim')|call delete('/Users/bweller/.vim/plugin/AlignMapsPlugin.vim')|call delete('/Users/bweller/.vim/plugin/cecutil.vim')|call delete('/Users/bweller/.vim/doc/Align.txt')|call delete('/Users/bweller/.vim/autoload/Align.vim')|call delete('/Users/bweller/.vim/autoload/AlignMaps.vim')
+markdown-1.2.2.vba: call delete('/Users/bweller/.vim/ftdetect/markdown.vim')|call delete('/Users/bweller/.vim/snippets/markdown.snippets')|call delete('/Users/bweller/.vim/syntax/markdown.vim')

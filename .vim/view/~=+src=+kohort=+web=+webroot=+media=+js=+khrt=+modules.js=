@@ -1,0 +1,188 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+cnoremap <buffer> <expr>  fugitive#buffer().rev()
+setlocal noautoindent
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal cursorcolumn
+setlocal cursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'javascript'
+setlocal filetype=javascript
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=manual
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcq
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=0
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal list
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'javascript'
+setlocal syntax=javascript
+endif
+setlocal tabstop=4
+setlocal tags=./tags,tags,~/src/kohort/web/.git/javascript.tags,~/src/kohort/web/.git/tags
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+silent! normal! zE
+17,26fold
+27,46fold
+47,65fold
+66,87fold
+88,128fold
+129,200fold
+201,253fold
+254,271fold
+272,287fold
+288,303fold
+304,323fold
+324,365fold
+373,400fold
+401,416fold
+417,434fold
+435,452fold
+453,488fold
+489,524fold
+525,561fold
+562,574fold
+575,590fold
+591,617fold
+618,649fold
+650,663fold
+664,681fold
+682,801fold
+802,986fold
+987,1022fold
+1023,1053fold
+802,1053fold
+1054,1080fold
+1081,1117fold
+1118,1147fold
+1148,1168fold
+1169,1189fold
+1190,1210fold
+1211,1231fold
+1232,1322fold
+1323,1371fold
+1372,1388fold
+1400,1436fold
+1437,1490fold
+1491,1539fold
+1540,1572fold
+1573,1578fold
+1579,1602fold
+1608,1651fold
+1652,1667fold
+1668,1689fold
+1690,1710fold
+1711,1747fold
+1748,1778fold
+1779,1798fold
+1799,1816fold
+1817,1836fold
+1837,2014fold
+2126,2126fold
+2015,2130fold
+2131,2156fold
+2157,2162fold
+2163,2264fold
+2265,2366fold
+2367,2394fold
+2395,2432fold
+2433,2489fold
+2491,2527fold
+2490,2527fold
+802
+normal zo
+802
+normal zc
+2015
+normal zo
+2015
+normal zc
+2490
+normal zo
+2491
+normal zo
+2490
+normal zc
+let s:l = 1081 - ((490 * winheight(0) + 69) / 139)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1081
+normal! 020l
+lcd ~/src/kohort/web
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :
